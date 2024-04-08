@@ -11,7 +11,7 @@ export default function Header() {
   const description = reactDescriptions[genRandomInt(2)];
   return (
     <header>
-      <a src="/src/help/index.hmtl">asdasdasd</a>
+      <a href="/src/help/index.hmtl">asdasdasd</a>
       <img src={reactImg} alt="Stylized atom" />
       <h1>React Essentials</h1>
       <p>
