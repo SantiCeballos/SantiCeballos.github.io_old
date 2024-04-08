@@ -2,6 +2,8 @@
   "name": "react-essentials-start",
   "version": "0.0.0",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -15,5 +17,6 @@
     "vite": "^4.3.9"
   },
   "keywords": [],
-  "description": ""
+  "description": "",
+  "homepage": "https://santiceballos.github.io"
 }
