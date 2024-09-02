@@ -61,9 +61,6 @@ export default {
   z-index: 100;
   visibility: visible;
   text-align: left;
-  p {
-    padding: 0 1em;
-  }
 }
 
 .tooltip-content.top {

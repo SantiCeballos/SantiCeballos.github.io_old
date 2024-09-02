@@ -14,7 +14,7 @@ import Tooltip from "../components/game/InstructionsTooltip.vue";
         <button class="info-icon">ℹ️</button>
       </template>
       <template #content>
-        <p>Instrucciones del juego:</p>
+        <p class="instructions-title">Instrucciones del juego:</p>
         <ul>
           <li>Selecciona la dificultad.</li>
           <li>Haz clic en "Play" para comenzar.</li>
@@ -109,6 +109,9 @@ export default {
   border: none;
   font-size: 0.8em;
   cursor: pointer;
-  /* padding: 0.5em; */
+}
+
+.instructions-title {
+  padding: 0 1em;
 }
 </style>
