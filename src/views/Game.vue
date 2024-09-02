@@ -25,6 +25,7 @@
         <span v-if="mole">🐹</span>
       </div>
     </div>
+    <p>Mejor puntuación: {{ highScore }}</p>
   </div>
 </template>
 
@@ -39,6 +40,7 @@ export default {
       currentMoleIndex: null,
       moleInterval: null,
       playing: false,
+      highScore: 0,
     };
   },
   methods: {
@@ -73,6 +75,8 @@ export default {
             : 30;
         this.moles[index] = false;
         navigator.vibrate(200);
+        this.highScore =
+          this.score > this.highScore ? this.score : this.highScore;
       }
     },
     stopPlaying() {
