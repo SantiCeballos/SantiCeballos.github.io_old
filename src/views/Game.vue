@@ -9,7 +9,7 @@ import Tooltip from "../components/game/InstructionsTooltip.vue";
     <h2>Jugador: {{ playerName }}</h2>
     <p v-if="playing">Puntos: {{ score }}</p>
     <LevelSelector :difficulty="difficulty" @updateDifficulty="updateLevel" />
-    <Tooltip position="right">
+    <Tooltip position="top">
       <template #icon>
         <button class="info-icon">ℹ️</button>
       </template>
@@ -107,8 +107,8 @@ export default {
 .info-icon {
   background: none;
   border: none;
-  font-size: 1.2em;
+  font-size: 0.8em;
   cursor: pointer;
-  padding: 0.5em;
+  /* padding: 0.5em; */
 }
 </style>
