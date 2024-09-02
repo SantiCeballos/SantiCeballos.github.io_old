@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <!-- <h1>Toca al Topo</h1> -->
     <input v-model="playerName" type="text" placeholder="Introduce tu nombre" />
     <button @click="startGame" :disabled="!isValidName">Iniciar Juego</button>
   </div>
@@ -31,7 +30,6 @@ export default {
 <style scoped>
 .home {
   text-align: center;
-  /* padding: 20px; */
   display: flex;
   flex-direction: column;
   gap: 8px;
