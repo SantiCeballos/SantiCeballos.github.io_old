@@ -51,6 +51,7 @@ export default {
   display: inline-block;
   width: fit-content;
   margin: 0 auto;
+  max-width: 100vw;
 }
 
 .tooltip-content {
