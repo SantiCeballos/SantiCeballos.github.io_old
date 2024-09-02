@@ -1,6 +1,7 @@
 <script setup>
 import GameBoard from "../components/game/GameBoard.vue";
 import LevelSelector from "../components/game/LevelSelector.vue";
+import Tooltip from "../components/game/InstructionsTooltip.vue";
 </script>
 
 <template>
@@ -8,6 +9,20 @@ import LevelSelector from "../components/game/LevelSelector.vue";
     <h2>Jugador: {{ playerName }}</h2>
     <p v-if="playing">Puntos: {{ score }}</p>
     <LevelSelector :difficulty="difficulty" @updateDifficulty="updateLevel" />
+    <Tooltip position="right">
+      <template #icon>
+        <button class="info-icon">ℹ️</button>
+      </template>
+      <template #content>
+        <p>Instrucciones del juego:</p>
+        <ul>
+          <li>Selecciona la dificultad.</li>
+          <li>Haz clic en "Play" para comenzar.</li>
+          <li>Haz clic en los topos tan pronto como aparezcan.</li>
+          <li>Ganas puntos según la dificultad seleccionada.</li>
+        </ul>
+      </template>
+    </Tooltip>
     <button v-if="!playing" @click="startPlaying">Play</button>
     <button v-else @click="stopPlaying">Stop</button>
     <GameBoard
@@ -87,5 +102,13 @@ export default {
   flex-direction: column;
   justify-content: center;
   gap: 1em;
+}
+
+.info-icon {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 0.5em;
 }
 </style>

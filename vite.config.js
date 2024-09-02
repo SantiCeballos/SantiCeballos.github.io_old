@@ -8,6 +8,33 @@ export default defineConfig({
     vue(),
     VitePWA({
       registerType: "autoUpdate",
+      workbox: {
+        runtimeCaching: [
+          {
+            urlPattern: ({ url }) => url.origin === self.location.origin,
+            handler: "CacheFirst",
+            options: {
+              cacheName: "static-cache",
+              expiration: {
+                maxEntries: 50,
+                maxAgeSeconds: 60 * 60 * 24 * 30, // 30 días
+              },
+            },
+          },
+          {
+            urlPattern: ({ url }) => url.origin !== self.location.origin,
+            handler: "NetworkFirst",
+            options: {
+              cacheName: "dynamic-cache",
+              networkTimeoutSeconds: 10,
+              expiration: {
+                maxEntries: 50,
+                maxAgeSeconds: 60 * 60 * 24 * 7, // 7 días
+              },
+            },
+          },
+        ],
+      },
       manifest: {
         name: "Toca al Topo",
         short_name: "Topo",
@@ -24,5 +51,8 @@ export default defineConfig({
     // simulate DOM with happy-dom
     // (requires installing happy-dom as a peer dependency)
     environment: "happy-dom",
+  },
+  server: {
+    port: 3000,
   },
 });
