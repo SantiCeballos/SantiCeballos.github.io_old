@@ -6,7 +6,7 @@
 
 Este proyecto fue desarrollado utilizando Vue 3 y Vite, y es completamente funcional offline gracias a la implementación de Service Workers.
 
-Se puede probar en (https://santiceballos.github.io/ "Github Pages")
+Se puede probar en [Github Pages de Santi](https://santiceballos.github.io)
 
 ## Características
 
