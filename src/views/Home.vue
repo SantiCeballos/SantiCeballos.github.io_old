@@ -31,7 +31,7 @@ export default {
 <style scoped>
 .home {
   text-align: center;
-  padding: 20px;
+  /* padding: 20px; */
   display: flex;
   flex-direction: column;
   gap: 8px;
