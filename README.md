@@ -12,7 +12,7 @@ Este proyecto fue desarrollado utilizando Vue 3 y Vite, y es completamente funci
 - **Diferentes niveles de dificultad**: Bajo, Medio y Alto, que afectan la velocidad de aparición de los topos.
 - **Puntuación dinámica**: La puntuación se actualiza en tiempo real según el nivel de dificultad.
 - **Experiencia táctil mejorada**: Vibración del dispositivo al "matar" un topo (solo en dispositivos que soportan vibración).
-- **Despliegue continuo**: La aplicación está desplegada en Netlify y disponible públicamente.
+- **Despliegue continuo**: La aplicación está desplegada en Github Pages y disponible públicamente.
 
 ## Tecnologías Utilizadas
 
@@ -21,11 +21,6 @@ Este proyecto fue desarrollado utilizando Vue 3 y Vite, y es completamente funci
 - **Vue Router**: Manejador de rutas para Vue.js.
 - **Service Workers**: Para soportar el modo offline de la aplicación.
 
-## Requisitos del Sistema
-
-- Node.js v14.x o superior
-- npm v6.x o superior
-
 ## Instalación y Configuración
 
 Sigue estos pasos para clonar el proyecto y ejecutarlo en tu entorno local:
@@ -33,13 +28,13 @@ Sigue estos pasos para clonar el proyecto y ejecutarlo en tu entorno local:
 1. Clona el repositorio:
 
    ```bash
-   git clone https://github.com/tu-usuario/toca-al-topo.git
+   git clone https://github.com/SantiCeballos/SantiCeballos.github.io.git
    ```
 
 2. Navega al directorio del proyecto:
 
    ```bash
-   cd toca-al-topo
+   cd SantiCeballos.github.io
    ```
 
 3. Instala las dependencias del proyecto:
