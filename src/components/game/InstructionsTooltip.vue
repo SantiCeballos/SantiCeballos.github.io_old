@@ -49,6 +49,8 @@ export default {
   /* top: 1em;
   left: 1em; */
   display: inline-block;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .tooltip-content {
