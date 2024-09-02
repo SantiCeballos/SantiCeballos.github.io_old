@@ -34,9 +34,9 @@ export default {
             ? 20
             : 30;
         this.moles[index] = false;
-        if (vibrate in navigator) {
-          navigator.vibrate(200);
-        }
+        // if (vibrate in navigator) {
+        navigator.vibrate(200);
+        // }
         // navigator.vibrate(200);
         this.$emit("updateScore", this.localScore);
         // this.highScore =
