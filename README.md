@@ -6,6 +6,8 @@
 
 Este proyecto fue desarrollado utilizando Vue 3 y Vite, y es completamente funcional offline gracias a la implementación de Service Workers.
 
+Se puede probar en [Github Pages de Santi](https://santiceballos.github.io)
+
 ## Características
 
 - **Modo offline**: El juego sigue funcionando aunque el dispositivo esté sin conexión a Internet.
