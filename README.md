@@ -22,6 +22,10 @@ Se puede probar en [Github Pages de Santi](https://santiceballos.github.io)
 - **Vite**: Herramienta de desarrollo rápida para Vue.js que permite una configuración mínima y un bundling eficiente.
 - **Vue Router**: Manejador de rutas para Vue.js.
 - **Service Workers**: Para soportar el modo offline de la aplicación.
+- **Conventional commits**: Para estandarizar los commits.
+- **Standard Version**: Para facilitar el control de versiones.
+- **Vitest**: Para facilitar la ejecucion de tests.
+- **eslint**: Para hacer linting del proyecto.
 
 ## Instalación y Configuración
 
