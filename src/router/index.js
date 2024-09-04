@@ -1,21 +1,21 @@
-import { createRouter, createWebHistory } from "vue-router";
-import Home from "../views/Home.vue";
-import Game from "../views/Game.vue";
+import { createRouter, createWebHistory } from 'vue-router';
+import Home from '../views/Home.vue';
+import Game from '../views/Game.vue';
 
 const routes = [
   {
-    path: "/",
-    name: "Home",
+    path: '/',
+    name: 'Home',
     component: Home,
   },
   {
-    path: "/game",
-    name: "Game",
+    path: '/game',
+    name: 'Game',
     component: Game,
   },
   {
-    path: "/:catchAll(.*)",
-    redirect: "/",
+    path: '/:catchAll(.*)',
+    redirect: '/',
   },
 ];
 

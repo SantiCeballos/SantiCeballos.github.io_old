@@ -1,5 +1,5 @@
 import { mount } from "@vue/test-utils";
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, vi } from "vitest";
 import GameBoard from "../../src/components/game/GameBoard.vue";
 
 describe("GameBoard.vue", () => {
@@ -26,9 +26,6 @@ describe("GameBoard.vue", () => {
     expect(moleCell.text()).toBe("🐹");
   });
 
-  /* He intentado testear tambien cuándo que se actualice el score cuándo le das a un topo, pero lamentablemente
-  peta al intentar llamar al navigator.vibrate(). Dejo el test como prueba de la intención
-
   it("updates score and hides mole when a mole is clicked", async () => {
     const wrapper = mount(GameBoard, {
       props: {
@@ -47,7 +44,7 @@ describe("GameBoard.vue", () => {
 
     const moleAfterClick = wrapper.find(".cell span");
     expect(moleAfterClick.exists()).toBe(false);
-  }); */
+  });
 
   it("calls navigator.vibrate when a mole is hit", async () => {
     global.navigator.vibrate = vi.fn();

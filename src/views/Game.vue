@@ -23,8 +23,8 @@ import Tooltip from "../components/game/InstructionsTooltip.vue";
         </ul>
       </template>
     </Tooltip>
-    <button v-if="!playing" @click="startPlaying">Play</button>
-    <button v-else @click="stopPlaying">Stop</button>
+    <button ref="playButton" v-if="!playing" @click="startPlaying">Play</button>
+    <button ref="stopButton" v-else @click="stopPlaying">Stop</button>
     <GameBoard
       v-if="playing"
       :difficulty="difficulty"

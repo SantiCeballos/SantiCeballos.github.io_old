@@ -1,11 +1,11 @@
-import { mount } from "@vue/test-utils";
-import LevelSelector from "../../src/components/game/LevelSelector.vue";
+import { mount } from '@vue/test-utils';
+import LevelSelector from '../../src/components/game/LevelSelector.vue';
 
-describe("LevelSelector.vue", () => {
-  it("renders with the correct initial difficulty", () => {
+describe('LevelSelector.vue', () => {
+  it('renders with the correct initial difficulty', () => {
     const wrapper = mount(LevelSelector, {
       props: {
-        difficulty: "medium",
+        difficulty: 'medium',
       },
     });
 
@@ -23,15 +23,15 @@ describe("LevelSelector.vue", () => {
   it('updates localDifficulty and emits "updateDifficulty" when selection changes', async () => {
     const wrapper = mount(LevelSelector, {
       props: {
-        difficulty: "low",
+        difficulty: 'low',
       },
     });
 
     const highInput = wrapper.find('input[value="high"]');
     await highInput.setValue();
 
-    expect(wrapper.vm.localDifficulty).toBe("high");
+    expect(wrapper.vm.localDifficulty).toBe('high');
     expect(wrapper.emitted().updateDifficulty).toBeTruthy();
-    expect(wrapper.emitted().updateDifficulty[0]).toEqual(["high"]);
+    expect(wrapper.emitted().updateDifficulty[0]).toEqual(['high']);
   });
 });
