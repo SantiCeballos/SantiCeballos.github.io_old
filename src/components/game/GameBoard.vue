@@ -34,7 +34,10 @@ export default {
             ? 20
             : 30;
         this.moles[index] = false;
-        if ("vibrate" in navigator) {
+        if (
+          window.navigator &&
+          typeof window.navigator.vibrate !== "undefined"
+        ) {
           navigator.vibrate(200);
         }
         this.$emit("updateScore", this.localScore);
