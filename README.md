@@ -13,6 +13,7 @@ Se puede probar en [Github Pages de Santi](https://santiceballos.github.io)
 - **Modo offline**: El juego sigue funcionando aunque el dispositivo esté sin conexión a Internet.
 - **Diferentes niveles de dificultad**: Bajo, Medio y Alto, que afectan la velocidad de aparición de los topos.
 - **Puntuación dinámica**: La puntuación se actualiza en tiempo real según el nivel de dificultad.
+- **Registro de puntuación máxima**: Se muestra la puntuación máxima en caso de haber jugado más de una partida en una misma sesion. Como mejora, me hubiera gustado persistir esta puntuación máxima, pero por tiempos me es imposible.
 - **Experiencia táctil mejorada**: Vibración del dispositivo al "matar" un topo (solo en dispositivos que soportan vibración).
 - **Despliegue continuo**: La aplicación está desplegada en Github Pages y disponible públicamente.
 
@@ -25,7 +26,7 @@ Se puede probar en [Github Pages de Santi](https://santiceballos.github.io)
 - **Conventional commits**: Para estandarizar los commits.
 - **Standard Version**: Para facilitar el control de versiones.
 - **Vitest**: Para facilitar la ejecucion de tests.
-- **eslint**: Para hacer linting del proyecto.
+- **Eslint**: Para hacer linting del proyecto.
 
 ## Instalación y Configuración
 
