@@ -34,12 +34,7 @@ export default {
             ? 20
             : 30;
         this.moles[index] = false;
-        if (
-          window.navigator &&
-          typeof window.navigator.vibrate !== "undefined"
-        ) {
-          navigator.vibrate(200);
-        }
+        navigator.vibrate(200);
         this.$emit("updateScore", this.localScore);
       }
     },
